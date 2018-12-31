@@ -10,5 +10,5 @@
 **/.DS_Store
 
 ### Directories to ignore ###
-
+.emacs.d/**
 
