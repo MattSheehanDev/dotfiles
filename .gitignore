@@ -1,0 +1,14 @@
+
+### Emacs ###
+*.*~
+[#]*[#]
+.\#*
+.[#]*
+*.[a-zA-Z]~
+
+### macOS ###
+**/.DS_Store
+
+### Directories to ignore ###
+
+
