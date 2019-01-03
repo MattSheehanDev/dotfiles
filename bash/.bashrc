@@ -1,3 +1,10 @@
+
+# Load aliases
+if [ -f ~/.aliases ]; then
+    source ~/.aliases
+fi
+
+
 ###############
 # PATH
 ###############
@@ -5,13 +12,6 @@ export PATH="/usr/local/sbin:$PATH"
 # vvv -- this might change if python3 changes (path of virtualenv?)
 export PATH="~/Library/Python/3.7/bin:$PATH"
 
-
-###############
-# PYTHON
-###############
-# alias python to python3, the system default python is 2, and changing the symlink might break things
-alias python='python3'
-alias pip='pip3'
 
 ###############
 # RUBY
@@ -39,22 +39,9 @@ fi
 # LEDGER
 ###############
 export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Dropbox/Finances/accounting/ledger/reports"
+# LEDGER_REPORTS_DIR="$HOME/Projects/ledger-reports"
+# export LEDGERSCRIPTS_UTILS_DIR="$HOME/Dropbox/Finances/accounting/ledger-utils"
 
-LEDGER_REPORTS_DIR="$HOME/Projects/ledger-reports"
-alias ledreports="${LEDGER_REPORTS_DIR}/reports.sh"
-alias ledpush="$HOME/Dropbox/Finances/accounting/ledger/commit.sh"
-# alias ledarchive="${LEDGER_REPORTS_DIR}/archive.sh"
-
-export LEDGERSCRIPTS_UTILS_DIR="$HOME/Dropbox/Finances/accounting/ledger-utils"
-alias ledutils="${LEDGERSCRIPTS_UTILS_DIR}/src/main.js"
-
-alias ledstation="emacs -f open-ledger-station"
-
-
-###############
-# EMACS
-###############
-alias emacs="/usr/local/bin/emacs"
 
 
 ###############
@@ -70,12 +57,6 @@ alias emacs="/usr/local/bin/emacs"
 #export TERM=xterm-256color
 export CLICOLOR=1
 export EDITOR=nano
-
-# shortcut for reloaded bash_profile
-alias refresh="source ~/.bash_profile"
-
-# shortcut for jumping back to the previous cwd
-alias -- -="cd -"
 
 
 ###############

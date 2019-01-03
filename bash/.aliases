@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# shortcut for reloaded bash_profile
+alias refresh="source ~/.bash_profile"
+# shortcut for jumping back to the previous cwd
+alias -- -="cd -"
+
+
+# alias python to python3, the system default python is 2, and changing the symlink might break things
+alias python='python3'
+alias pip='pip3'
+
+# alias emacs to use the symlink that points to the homebrew installation
+alias emacs="/usr/local/bin/emacs"
+
+
+alias ledreports="~/Projects/ledger-reports/reports.sh"
+alias ledpush="~/Dropbox/Finances/accounting/ledger/commit.sh"
+# alias ledarchive="${LEDGER_REPORTS_DIR}/archive.sh"
+
+alias ledutils="~/Dropbox/Finances/accounting/ledger-utils/src/main.js"
+
+alias ledstation="emacs -f open-ledger-station"
+
+
