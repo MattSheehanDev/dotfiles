@@ -40,14 +40,17 @@ fi
 # BASH-SENSIBLE
 ###############
 if [ -f ~/.bashrc.d/bash-sensible/sensible.bash ]; then
-    . ~/.bashrc.d/bash-sensible/sensible.bash
+    source ~/.bashrc.d/bash-sensible/sensible.bash
 fi
 
 ###############
 # Git Aware Prompt
 ###############
 export GITAWAREPROMPT=~/.bashrc.d/git-aware-prompt
-source "${GITAWAREPROMPT}/main.sh"
+
+if [[ -f "${GITAWAREPROMPT}/main.sh" ]]; then
+    source "${GITAWAREPROMPT}/main.sh"
+fi
 
 ###############
 # LEDGER
