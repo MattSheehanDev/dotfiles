@@ -44,6 +44,12 @@ if [ -f ~/.bashrc.d/bash-sensible/sensible.bash ]; then
 fi
 
 ###############
+# Git Aware Prompt
+###############
+export GITAWAREPROMPT=~/.bashrc.d/git-aware-prompt
+source "${GITAWAREPROMPT}/main.sh"
+
+###############
 # LEDGER
 ###############
 export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Dropbox/Finances/accounting/ledger/reports"
@@ -79,11 +85,13 @@ man() {
 ###############
 # PS1
 ###############
-if [[ ${EUID} == 0 ]] ; then
-    PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '
-else
-    PS1='\[\033[01;32m\]\u@\h\[\033[01;33m\] \w \$\[\033[00m\] '
-fi
+export PS1="\[$bldgrn\]\u \[$bldylw\]\w \[\033[33;1m\]\[\033[m\]\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$bldylw\]$\[$txtrst\] "
+
+# if [[ ${EUID} == 0 ]] ; then
+#     PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '
+# else
+#     PS1='\[\033[01;32m\]\u@\h\[\033[01;33m\] \w \$\[\033[00m\] '
+# fi
 
 
 
