@@ -1,8 +1,22 @@
 
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+
 # Load aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
+
+
+###############
+# GLOBALS
+###############
+export EDITOR=nano
+#export TERM=xterm-256color
 
 
 ###############
@@ -21,12 +35,6 @@ if [ -x "$(command -v rbenv)" ]; then
     eval "$(rbenv init -)"
 fi
 
-###############
-# BASH-COMPLETION
-###############
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
 
 ###############
 # BASH-SENSIBLE
@@ -49,14 +57,6 @@ export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Dropbox/Finances/accounting/ledger/repor
 ###############
 # export PATH="~/Projects/clang-llvm-trunk/build/bin:$PATH"
 # alias contract++="/Users/matthewsheehan/Projects/clang-llvm-contracts/llvm-build/bin/clang++"
-
-
-###############
-# GLOBALS
-###############
-#export TERM=xterm-256color
-export CLICOLOR=1
-export EDITOR=nano
 
 
 ###############
@@ -83,5 +83,15 @@ if [[ ${EUID} == 0 ]] ; then
     PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '
 else
     PS1='\[\033[01;32m\]\u@\h\[\033[01;33m\] \w \$\[\033[00m\] '
+fi
+
+
+
+
+# OS specific settings
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    source ~/.bashrc.macos
+elif [[ "$OSTYPE" == "linux"* ]]; then
+    source ~/.bashrc.linux
 fi
 
