@@ -13,10 +13,28 @@ fi
 
 
 ###############
-# GLOBALS
+# .bashrc.d pkgs
+###############
+
+# Bash Sensible
+if [ -f ~/.bashrc.d/bash-sensible/sensible.bash ]; then
+    source ~/.bashrc.d/bash-sensible/sensible.bash
+fi
+
+# Git Aware Prompt
+export GITAWAREPROMPT=~/.bashrc.d/git-aware-prompt
+if [[ -f "${GITAWAREPROMPT}/main.sh" ]]; then
+    source "${GITAWAREPROMPT}/main.sh"
+fi
+
+
+###############
+# Global Settings
 ###############
 export EDITOR=nano
 #export TERM=xterm-256color
+export PS1="\[$bldgrn\]\u \[$bldylw\]\w \[\033[33;1m\]\[\033[m\]\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$bldylw\]$\[$txtrst\] "
+
 
 
 ###############
@@ -37,35 +55,12 @@ fi
 
 
 ###############
-# BASH-SENSIBLE
-###############
-if [ -f ~/.bashrc.d/bash-sensible/sensible.bash ]; then
-    source ~/.bashrc.d/bash-sensible/sensible.bash
-fi
-
-###############
-# Git Aware Prompt
-###############
-export GITAWAREPROMPT=~/.bashrc.d/git-aware-prompt
-
-if [[ -f "${GITAWAREPROMPT}/main.sh" ]]; then
-    source "${GITAWAREPROMPT}/main.sh"
-fi
-
-###############
 # LEDGER
 ###############
 export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Dropbox/Finances/accounting/ledger/reports"
 # LEDGER_REPORTS_DIR="$HOME/Projects/ledger-reports"
 # export LEDGERSCRIPTS_UTILS_DIR="$HOME/Dropbox/Finances/accounting/ledger-utils"
 
-
-
-###############
-# CLANG
-###############
-# export PATH="~/Projects/clang-llvm-trunk/build/bin:$PATH"
-# alias contract++="/Users/matthewsheehan/Projects/clang-llvm-contracts/llvm-build/bin/clang++"
 
 
 ###############
@@ -83,20 +78,6 @@ man() {
         LESS_TERMCAP_us=$'\e[0;32;4m' \
             man "$@"
 }
-
-
-###############
-# PS1
-###############
-export PS1="\[$bldgrn\]\u \[$bldylw\]\w \[\033[33;1m\]\[\033[m\]\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$bldylw\]$\[$txtrst\] "
-
-# if [[ ${EUID} == 0 ]] ; then
-#     PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '
-# else
-#     PS1='\[\033[01;32m\]\u@\h\[\033[01;33m\] \w \$\[\033[00m\] '
-# fi
-
-
 
 
 # OS specific settings
