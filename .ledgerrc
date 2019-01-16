@@ -1,4 +1,4 @@
 --exchange $
---f ~/Dropbox/Finances/accounting/ledger/data/general.ledger
---price-db ~/Dropbox/Finances/accounting/ledger/data/prices.ledger
+--f ~/Dropbox/Finances/accounting/ledger-data/data/general.ledger
+--price-db ~/Dropbox/Finances/accounting/ledger-data/data/prices.ledger
 --strict
