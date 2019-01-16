@@ -357,11 +357,11 @@ you should place your code here."
   "The ledger station opens three windows (general ledger, account ledger, and balance report)"
   (interactive)
   (open-fullscreen)
-  (find-file-existing "~/Dropbox/Finances/accounting/ledger/data/general.ledger")
+  (find-file-existing "~/Projects/ledger-data/data/general.ledger")
   (end-of-buffer)
   (split-window-right)
   (next-multiframe-window)
-  (find-file-existing "~/Dropbox/Finances/accounting/ledger/data/accounts.ledger")
+  (find-file-existing "~/Projects/ledger-data/data/accounts.ledger")
   (split-window-below)
   (next-multiframe-window)
   (next-multiframe-window)
