@@ -79,6 +79,13 @@ man() {
             man "$@"
 }
 
+###############
+# Cheat.sh
+###############
+cheat () {
+    curl cht.sh/$1
+}
+
 
 # OS specific settings
 if [[ "$OSTYPE" == "darwin"* ]]; then
