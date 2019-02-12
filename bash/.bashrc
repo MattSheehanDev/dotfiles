@@ -62,6 +62,14 @@ export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Dropbox/Finances/accounting/ledger-repor
 # export LEDGERSCRIPTS_UTILS_DIR="$HOME/Dropbox/Finances/accounting/ledger-utils"
 
 
+###############
+# Git
+###############
+git-add() {
+    git add "$@"
+    git status
+}
+alias ga="git-add"
 
 ###############
 # Colorized man pages
@@ -84,6 +92,13 @@ man() {
 ###############
 cheat () {
     curl cht.sh/$1
+}
+
+###############
+# Wttr.in
+###############
+weather() {
+    curl wttr.in/$1
 }
 
 
