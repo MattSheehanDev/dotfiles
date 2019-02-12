@@ -69,7 +69,9 @@ git-add() {
     git add "$@"
     git status
 }
-alias ga="git-add"
+alias ga="git-add ."
+alias gs="git status"
+alias gc="git commit"
 
 ###############
 # Colorized man pages
