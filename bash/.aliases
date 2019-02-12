@@ -6,6 +6,14 @@ alias refresh="source ~/.bash_profile"
 alias -- -="cd -"
 
 
+# shortcut for displaying csv's
+alias csv="column -s, -t"
+
+# git aliases
+alias ga="git-add ."
+alias gs="git status"
+alias gc="git commit"
+
 # alias python to python3, the system default python is 2, and changing the symlink might break things
 alias python='python3'
 alias pip='pip3'
@@ -23,6 +31,7 @@ alias ledutils="~/Dropbox/Finances/accounting/ledger-utils/src/main.js"
 alias ledstation="emacs -f open-ledger-station"
 
 
+# browser shortcuts, useful for debugging
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias ch="chrome --user-data-dir $(mktemp -d)"
 

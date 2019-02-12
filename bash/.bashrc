@@ -66,12 +66,10 @@ export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Dropbox/Finances/accounting/ledger-repor
 # Git
 ###############
 git-add() {
+    # I like to see the staged files after an add
     git add "$@"
     git status
 }
-alias ga="git-add ."
-alias gs="git status"
-alias gc="git commit"
 
 ###############
 # Colorized man pages
