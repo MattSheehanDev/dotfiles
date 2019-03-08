@@ -39,3 +39,6 @@ alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"
 alias fx="firefox --new-instance --profile $(mktemp -d)"
 alias fxp="fx -private"
 
+# alias powershell
+alias pwsh="/usr/local/microsoft/powershell/6/pwsh"
+
