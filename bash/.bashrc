@@ -57,7 +57,7 @@ fi
 ###############
 # LEDGER
 ###############
-export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Dropbox/Finances/accounting/ledger-reports"
+export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Documents/finances/accounting/ledger-reports"
 # LEDGER_REPORTS_DIR="$HOME/Projects/ledger-reports"
 # export LEDGERSCRIPTS_UTILS_DIR="$HOME/Dropbox/Finances/accounting/ledger-utils"
 

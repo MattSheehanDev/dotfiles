@@ -13,6 +13,9 @@ alias csv="column -s, -t"
 alias ga="git-add"
 alias gs="git status"
 alias gc="git commit"
+alias gr="git reset"
+alias gr-soft="git reset --soft"
+alias gr-hard="git reset --hard"
 
 # alias python to python3, the system default python is 2, and changing the symlink might break things
 alias python='python3'
@@ -26,7 +29,7 @@ alias ledreports="~/Projects/ledger-reports/reports.sh"
 alias ledpush="~/Dropbox/Finances/accounting/ledger/commit.sh"
 # alias ledarchive="${LEDGER_REPORTS_DIR}/archive.sh"
 
-alias ledutils="~/Dropbox/Finances/accounting/ledger-utils/src/main.js"
+alias ledutils="~/Documents/finances/accounting/ledger-utils/src/main.js"
 
 alias ledstation="emacs -f open-ledger-station"
 
