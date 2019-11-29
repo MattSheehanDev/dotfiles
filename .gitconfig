@@ -11,3 +11,9 @@
 	last = log -1 HEAD
 	vis = !gitk
 	amend = commit --amend
+	push = stash push --all
+	pop = stash pop
+	stashls = stash list
+[core]
+	autocrlf = input
+	whitespace = blank-at-eol,space-before-tab,cr-at-eol
