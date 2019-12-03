@@ -48,3 +48,6 @@ alias pwsh="/usr/local/microsoft/powershell/6/pwsh"
 
 # alias trash
 alias del="trash"
+
+#alias shellcheck
+alias check="shellcheck"
