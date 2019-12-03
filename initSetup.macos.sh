@@ -23,6 +23,8 @@ ln -s -f "$cwd/.npmrc" "~/.npmrc"
 
 
 # install brew packages
+brew install bash-completion
 brew install archey
 brew install trash
+brew install tree
 
