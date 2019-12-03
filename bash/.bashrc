@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # If not running interactively, don't do anything
 case $- in
@@ -24,6 +25,7 @@ fi
 # Git Aware Prompt
 export GITAWAREPROMPT=~/.bashrc.d/git-aware-prompt
 if [[ -f "${GITAWAREPROMPT}/main.sh" ]]; then
+    # shellcheck source=/Users/matthewsheehan/.bashrc.d/git-aware-prompt/main.sh
     source "${GITAWAREPROMPT}/main.sh"
 fi
 
@@ -42,7 +44,7 @@ export PS1="\[$bldgrn\]\u \[$bldylw\]\w \[\033[33;1m\]\[\033[m\]\[$txtcyn\]\$git
 ###############
 export PATH="/usr/local/sbin:$PATH"
 # vvv -- this might change if python3 changes (path of virtualenv?)
-export PATH="~/Library/Python/3.7/bin:$PATH"
+export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 
 
 ###############
@@ -91,14 +93,14 @@ man() {
 # Cheat.sh
 ###############
 cheat () {
-    curl cht.sh/$1
+    curl cht.sh/"$1"
 }
 
 ###############
 # Wttr.in
 ###############
 weather() {
-    curl wttr.in/$1
+    curl wttr.in/"$1"
 }
 
 
