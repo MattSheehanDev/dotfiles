@@ -37,12 +37,14 @@ alias ledstation="emacs -f open-ledger-station"
 
 # browser shortcuts, useful for debugging
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-alias ch="chrome --user-data-dir $(mktemp -d)"
+alias ch='chrome --user-data-dir $(mktemp -d)'
 
 alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"
-alias fx="firefox --new-instance --profile $(mktemp -d)"
+alias fx='firefox --new-instance --profile $(mktemp -d)'
 alias fxp="fx -private"
 
 # alias powershell
 alias pwsh="/usr/local/microsoft/powershell/6/pwsh"
 
+# alias trash
+alias del="trash"

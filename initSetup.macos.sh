@@ -24,5 +24,5 @@ ln -s -f "$cwd/.npmrc" "~/.npmrc"
 
 # install brew packages
 brew install archey
-
+brew install trash
 
