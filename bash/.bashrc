@@ -22,6 +22,12 @@ if [ -f ~/.bashrc.d/bash-sensible/sensible.bash ]; then
     source ~/.bashrc.d/bash-sensible/sensible.bash
 fi
 
+# z - jump around
+if [ -f "$HOME/.bashrc.d/z/z.sh" ]; then
+    export _Z_DATA="$HOME/.z"
+    source "$HOME/.bashrc.d/z/z.sh"
+fi
+
 # Git Aware Prompt
 export GITAWAREPROMPT=~/.bashrc.d/git-aware-prompt
 if [[ -f "${GITAWAREPROMPT}/main.sh" ]]; then
@@ -70,6 +76,11 @@ export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Documents/finances/accounting/ledger-rep
 git-add() {
     # I like to see the staged files after an add
     git add "$@"
+    git status
+}
+git-push() {
+    # I am also like to see what files are staged/unstaged after a push
+    git push "$@"
     git status
 }
 
