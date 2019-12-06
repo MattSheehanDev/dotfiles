@@ -35,6 +35,9 @@ if [[ -f "${GITAWAREPROMPT}/main.sh" ]]; then
     source "${GITAWAREPROMPT}/main.sh"
 fi
 
+# Enable bash_completion
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
 
 ###############
 # Global Settings

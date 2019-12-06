@@ -46,6 +46,8 @@ alias fxp="fx -private"
 
 # alias powershell
 alias pwsh="/usr/local/microsoft/powershell/6/pwsh"
+#alias rbenv
+alias rb="rbenv"
 
 # alias trash
 alias del="trash"
