@@ -57,6 +57,16 @@ export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 
 
 ###############
+# Utilities
+###############
+shell-add() {
+    echo "$@" | sudo tee -a "/etc/shells"
+}
+
+alias chzsh="chsh -s $(which zsh)"
+
+
+###############
 # RUBY
 ###############
 # setup rbenv shell integration
