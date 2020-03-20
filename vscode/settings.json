@@ -1,0 +1,60 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontSize": 13,
+    "editor.lineHeight": 19,
+    "editor.roundedSelection": false,
+    "editor.cursorBlinking": "solid",
+    "editor.lineNumbers": "on",
+    "editor.detectIndentation": false,
+    "editor.minimap.enabled": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll,eslint": true
+    },
+    "explorer.openEditors.visible": 0,
+    "explorer.decorations.colors": false,
+    "explorer.confirmDelete": false,
+
+    "window.reopenFolders": "none",
+    "window.zoomLevel": 0,
+    "window.menuBarVisibility": "toggle",
+    "window.nativeFullScreen": false,
+
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "workbench.iconTheme": "vs-nomo-dark",
+    "workbench.enableExperiments": false,
+
+    "breadcrumbs.filePath": "off",
+    "breadcrumbs.enabled": false,
+    "extensions.ignoreRecommendations": true,
+
+    "files.eol": "\n",
+    "update.mode": "manual",
+
+    // CSS
+    "css.lint.universalSelector": "error",
+    "css.lint.important": "error",
+    // Less
+    "less.lint.universalSelector": "error",
+    "less.lint.important": "error",
+    // HTML
+    "html.format.indentInnerHtml": true,
+    // Integrated Terminal
+    "terminal.integrated.cursorBlinking": false,
+    // Telemetry
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+
+    "javascript.format.semicolons": "insert",
+    "extensions.autoUpdate": false,
+
+    // Beautify
+    "scssFormatter.useTabs": false,
+    "scssFormatter.tabWidth": 4,
+
+    // Ruby/Solargraph
+    "ruby.intellisense": false,
+    "solargraph.useBundler": true,
+    "solargraph.hover": true,
+}
