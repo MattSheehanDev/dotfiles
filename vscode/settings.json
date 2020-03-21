@@ -14,10 +14,10 @@
     "explorer.decorations.colors": false,
     "explorer.confirmDelete": false,
 
-    "window.reopenFolders": "none",
+    "window.restoreWindows": "none",
     "window.zoomLevel": 0,
-    "window.menuBarVisibility": "toggle",
     "window.nativeFullScreen": false,
+    "window.titleBarStyle": "custom",
 
     "workbench.sideBar.location": "right",
     "workbench.activityBar.visible": true,
@@ -26,6 +26,7 @@
     "workbench.enableExperiments": false,
 
     "breadcrumbs.filePath": "off",
+    "breadcrumbs.symbolPath": "off",
     "breadcrumbs.enabled": false,
     "extensions.ignoreRecommendations": true,
 
@@ -47,6 +48,7 @@
     "telemetry.enableCrashReporter": false,
 
     "javascript.format.semicolons": "insert",
+    "javascript.implicitProjectConfig.checkJs": true,
     "extensions.autoUpdate": false,
 
     // Beautify
@@ -57,4 +59,7 @@
     "ruby.intellisense": false,
     "solargraph.useBundler": true,
     "solargraph.hover": true,
+
+    "eslint.packageManager": "yarn",
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }
