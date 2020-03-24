@@ -98,6 +98,23 @@ git-push() {
 }
 
 ###############
+# OpenSSL
+###############
+x509cert() {
+    # create new x509cert and key (-nodes makes it unencrypted)
+    openssl req -new -x509 -newkey rsa:2048 -keyout "$1.key" -out "$1.cer" -days 365 -subj /CN=localhost -nodes
+    # create pfx (macOS assumes it always has a password, so it always needs a password) s
+    openssl pkcs12 -export -out "$1.pfx" -inkey "$1.key" -in "$1.cer"
+    # print thumbprint
+    echo -en "\n"
+    thumbprint "$1.cer"
+}
+thumbprint() {
+    openssl x509 -in "$1" -outform DER | sha1sum
+}
+
+
+###############
 # Colorized man pages
 ###############
 man() {

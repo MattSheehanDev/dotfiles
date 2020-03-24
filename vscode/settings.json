@@ -31,35 +31,61 @@
     "extensions.ignoreRecommendations": true,
 
     "files.eol": "\n",
-    "update.mode": "manual",
 
-    // CSS
-    "css.lint.universalSelector": "error",
-    "css.lint.important": "error",
-    // Less
-    "less.lint.universalSelector": "error",
-    "less.lint.important": "error",
-    // HTML
-    "html.format.indentInnerHtml": true,
-    // Integrated Terminal
+    "update.mode": "manual",
+    "extensions.autoUpdate": false,
+
     "terminal.integrated.cursorBlinking": false,
-    // Telemetry
+
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
 
+    "css.lint.universalSelector": "error",
+    "css.lint.important": "error",
+    "css.lint.duplicateProperties": "error",
+    "css.lint.emptyRules": "error",
+    "css.lint.float": "warning",
+    "css.lint.zeroUnits": "warning",
+    "css.validate": true,
+    "[css]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "MikeBovenlander.formate"
+    },
+    "less.lint.universalSelector": "error",
+    "less.lint.important": "error",
+    "less.lint.duplicateProperties": "error",
+    "less.lint.emptyRules": "error",
+    "less.lint.float": "warning",
+    "less.lint.zeroUnits": "warning",
+    "less.validate": true,
+    "[less]":{
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "MikeBovenlander.formate"
+    },
+    "scss.lint.universalSelector": "error",
+    "scss.lint.important": "error",
+    "scss.lint.duplicateProperties": "error",
+    "scss.lint.emptyRules": "error",
+    "scss.lint.float": "warning",
+    "scss.lint.zeroUnits": "warning",
+    "scss.validate": true,
+    "[scss]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "MikeBovenlander.formate"
+    },
+    "formate.verticalAlignProperties": false,
+
+    "eslint.packageManager": "yarn",
+    "typescript.updateImportsOnFileMove.enabled": "always",
     "javascript.format.semicolons": "insert",
     "javascript.implicitProjectConfig.checkJs": true,
-    "extensions.autoUpdate": false,
 
-    // Beautify
-    "scssFormatter.useTabs": false,
-    "scssFormatter.tabWidth": 4,
+    // HTML
+    "html.format.indentInnerHtml": true,
 
     // Ruby/Solargraph
     "ruby.intellisense": false,
     "solargraph.useBundler": true,
     "solargraph.hover": true,
 
-    "eslint.packageManager": "yarn",
-    "typescript.updateImportsOnFileMove.enabled": "always"
 }
