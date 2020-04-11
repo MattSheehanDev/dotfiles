@@ -1,0 +1,12 @@
+{
+    "workbench.enablePreviewFeatures": true,
+    "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "Monokai",
+    "files.eol": "\n",
+    "files.hotExit": "off",
+    "editor.cursorBlinking": "solid",
+    "telemetry.enableCrashReporter": false,
+    "update.mode": "manual",
+    "editor.detectIndentation": false,
+    "sql.tabColorMode": "border"
+}
