@@ -27,7 +27,18 @@ alias ls='ls -alp'
 archey -o
 
 
-
+###############
+# DNS
+##############3
+flushdns() {
+    sudo killall -HUP mDNSResponder;
+    sudo killall mDNSResponderHelper;
+    sudo dscacheutil -flushcache;
+}
+dns() {
+    # domain information groper
+    dig "$1" +noall +answer
+}
 
 ###############
 # CLANG
