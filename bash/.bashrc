@@ -145,6 +145,7 @@ weather() {
 }
 
 
+
 # OS specific settings
 if [[ "$OSTYPE" == "darwin"* ]]; then
     source ~/.bashrc.macos

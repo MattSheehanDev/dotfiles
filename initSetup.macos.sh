@@ -1,7 +1,8 @@
+#!/bin/bash
+
 #
 # Setup script for macos
 #
-
 
 cwd="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 # cwd="$(dirname $0)"
@@ -30,4 +31,5 @@ brew install bash-completion
 brew install archey
 brew install trash
 brew install tree
+brew install stow
 

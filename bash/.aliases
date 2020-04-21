@@ -5,6 +5,10 @@ alias refresh="source ~/.bash_profile"
 # shortcut for jumping back to the previous cwd
 alias -- -="cd -"
 
+alias mkdir='mkdir -p'
+alias tree="tree -a -I \".git\""
+alias e="$EDITOR"
+alias v="$VISUAL"
 
 # shortcut for displaying csv's
 alias csv="column -s, -t"
