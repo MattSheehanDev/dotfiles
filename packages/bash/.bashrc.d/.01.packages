@@ -1,0 +1,30 @@
+#!/bin/bash
+
+
+###############
+# .bashrc.d pkgs
+###############
+
+# Bash Sensible
+if [ -f ~/.bashrc.d/bash-sensible/sensible.bash ]; then
+    source ~/.bashrc.d/bash-sensible/sensible.bash
+fi
+
+# z - jump around
+if [ -f "$HOME/.bashrc.d/z/z.sh" ]; then
+    export _Z_DATA="$HOME/.z"
+    source "$HOME/.bashrc.d/z/z.sh"
+fi
+
+# Git Aware Prompt
+export GITAWAREPROMPT=~/.bashrc.d/git-aware-prompt
+if [[ -f "${GITAWAREPROMPT}/main.sh" ]]; then
+    # shellcheck source=/Users/matthewsheehan/.bashrc.d/git-aware-prompt/main.sh
+    source "${GITAWAREPROMPT}/main.sh"
+fi
+
+# Enable bash_completion
+if [[ -f /usr/local/etc/bash_completion ]]; then
+    source /usr/local/etc/bash_completion
+fi
+

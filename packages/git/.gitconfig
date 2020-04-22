@@ -2,7 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = Matt Sheehan
-	email = sheehamj@outlook.com
+	email = dev@mattsheehan.me
 [alias]
 	ch = checkout
 	ci = commit
