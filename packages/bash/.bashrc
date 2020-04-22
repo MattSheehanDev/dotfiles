@@ -11,7 +11,7 @@ esac
 shopt -s dotglob
 if [ -d "$HOME/.bashrc.d" ]; then
     for x in "$HOME/.bashrc.d"/* ; do
-        if [[ -f "$x" ]] ; then
+        if [[ -f "$x" && -x "$x" ]] ; then
             . "$x"
         fi
     done

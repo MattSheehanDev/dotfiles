@@ -23,6 +23,7 @@ alias gr="git reset"
 alias gr-soft="git reset --soft"
 alias gr-hard="git reset --hard"
 alias gl="git log --pretty=oneline"
+alias gb="git branch"
 
 # useful utilities
 alias b64="base64"
@@ -61,6 +62,7 @@ alias fxp="fx -private"
 
 # alias powershell
 alias pwsh="/usr/local/microsoft/powershell/6/pwsh"
+alias data="azuredatastudio"
 #alias rbenv
 alias rb="rbenv"
 
