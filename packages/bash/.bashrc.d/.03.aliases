@@ -15,6 +15,7 @@ alias csv="column -s, -t"
 alias cls="clear; ls"
 
 # git aliases
+alias gconfig="git config --global -e"
 alias ga="git-add"
 alias gs="git status"
 alias gc="git commit"
