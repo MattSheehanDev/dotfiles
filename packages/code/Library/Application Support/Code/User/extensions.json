@@ -6,6 +6,7 @@
         "mikebovenlander.formate",
         "msjsdiag.debugger-for-chrome",
         "firefox-devtools.vscode-firefox-debug",
-        "msjsdiag.debugger-for-edge"
+        "msjsdiag.debugger-for-edge",
+        "jeff-tian.tex-workshop"
     ]
 }

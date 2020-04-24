@@ -87,4 +87,5 @@
     "ruby.intellisense": false,
     "solargraph.useBundler": true,
     "solargraph.hover": true,
+    "diffEditor.renderSideBySide": true,
 }

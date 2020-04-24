@@ -19,3 +19,7 @@
 	autocrlf = input
 	whitespace = blank-at-eol,space-before-tab,cr-at-eol
 	editor = code --wait
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE

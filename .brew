@@ -18,3 +18,9 @@ brew install tree
 brew install stow
 brew install wget
 brew install imagemagick
+
+
+brew cask install mactex
+brew cask install cheatsheet
+brew cask install powershell
+
