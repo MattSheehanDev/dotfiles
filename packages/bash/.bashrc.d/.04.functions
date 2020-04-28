@@ -30,7 +30,9 @@ x509cert() {
 thumbprint() {
     openssl x509 -in "$1" -outform DER | sha1sum
 }
-
+inspect-ssl() {
+    echo | openssl s_client -showcerts -servername $1 -connect $1:443 2>/dev/null | openssl x509 -inform pem -noout -text
+}
 
 ###############
 # Colorized man pages
