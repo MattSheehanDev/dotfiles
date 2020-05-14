@@ -9,14 +9,6 @@ if [ -f "$(brew --prefix)"/etc/bash_completion ]; then
 fi
 
 
-# Stop homebrew from updating every time
-# To update brew, upgrade pkgs, and cleanup old pkgs and cache
-# brew update && brew upgrade && brew cleanup
-export HOMEBREW_NO_AUTO_UPDATE=1
-
-
-# Activate colors
-export CLICOLOR=1
 
 
 # list directory contents, specific to macOS

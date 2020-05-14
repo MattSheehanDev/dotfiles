@@ -26,6 +26,8 @@ alias gr-hard="git reset --hard"
 alias gl="git log --pretty=oneline"
 alias gb="git branch"
 alias gd="git difftool"
+alias gcx="git clean -x"
+alias gcxn="git clean -x -n"
 
 # useful utilities
 alias b64="base64"

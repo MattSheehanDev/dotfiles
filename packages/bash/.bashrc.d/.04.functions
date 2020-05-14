@@ -65,6 +65,16 @@ weather() {
 }
 
 
+SVGToPDF() {
+    inkscape --export-area-drawing --export-filename="${1/svg/pdf}" "$1"
+}
+PDFToPNG() {
+    magick convert -density 300 "$1" -quality 90 -alpha remove "${1/pdf/png}"
+}
+PNGToPFM() {
+    magick -endian lsb "$1" "${1/png/pfm}"
+}
+
 
 lowercase()  # move filenames to lowercase
 {
