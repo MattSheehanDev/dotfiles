@@ -22,3 +22,18 @@ My configuration
     - [git-aware-prompt](https://github.com/jimeh/git-aware-prompt)
     - [bash-sensible](https://github.com/mrzool/bash-sensible)
 
+
+## Azure Data Studio
+
+- Windows
+  - Settings file location -- `~\AppData\Roaming\azuredatastudio\User\settings.json`
+
+## Visual Studio Code
+
+- Windows
+  - Settings file location -- `~\AppData\Roaming\Code\User\settings.json`
+  - Keybinding file location -- `~\AppData\Roaming\Code\User\keybindings.json`
+- macOS
+  - Settings file location -- `~/Library/Application Support/Code/User/settings.json`
+  - Keybinding file location -- `~/Library/Application Support/Code/User/keybindings.json`
+
