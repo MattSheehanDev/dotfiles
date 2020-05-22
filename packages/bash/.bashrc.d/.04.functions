@@ -64,6 +64,17 @@ weather() {
     curl wttr.in/"$1"
 }
 
+###############
+# Lorem Picsum
+###############
+picsum() {
+    if [ $# -eq 0 ]; then
+        curl -L "https://picsum.photos/400/600"
+    else
+        curl -L "https://picsum.photos/$1/$2"
+    fi
+}
+
 
 SVGToPDF() {
     inkscape --export-area-drawing --export-filename="${1/svg/pdf}" "$1"
