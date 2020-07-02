@@ -26,6 +26,7 @@ flushdns() {
     sudo killall -HUP mDNSResponder;
     sudo killall mDNSResponderHelper;
     sudo dscacheutil -flushcache;
+    echo "DNS flushed"
 }
 dns() {
     # domain information groper
