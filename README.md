@@ -15,7 +15,16 @@ My configuration
 > stow *
 ```
 
-## .bashrc.d
+## Bash
+
+### Packages
+
+Install `bash-completion`
+```sh
+brew install bash-completion
+```
+
+### .bashrc.d
 
 - External packages
     - [Z](https://github.com/rupa/z)

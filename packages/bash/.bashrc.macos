@@ -12,7 +12,7 @@ fi
 
 
 # list directory contents, specific to macOS
-alias ls='ls -alp'
+alias ls='ls -alp --color'
 
 
 # Archy
