@@ -12,3 +12,4 @@
 ### Directories to ignore ###
 .emacs.d/**
 
+packages/bash/.bashrc.secrets

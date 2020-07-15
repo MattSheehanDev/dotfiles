@@ -40,3 +40,10 @@ elif [[ "$OSTYPE" == "linux"* ]]; then
     source ~/.bashrc.linux
 fi
 
+
+# Secrets
+if [ -f ~/.bashrc.secrets ]; then
+    # shellcheck source=/Users/matthewsheehan/.bashrc
+    source ~/.bashrc.secrets
+fi
+
