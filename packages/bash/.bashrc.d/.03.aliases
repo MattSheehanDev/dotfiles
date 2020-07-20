@@ -50,9 +50,6 @@ alias emacs="/usr/local/bin/emacs"
 alias ledreports="~/Projects/ledger-reports/reports.sh"
 alias ledpush="~/Dropbox/Finances/accounting/ledger/commit.sh"
 # alias ledarchive="${LEDGER_REPORTS_DIR}/archive.sh"
-
-alias ledutils="~/Documents/finances/accounting/ledger-utils/src/main.js"
-
 alias ledstation="emacs -f open-ledger-station"
 
 
