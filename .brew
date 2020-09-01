@@ -17,6 +17,7 @@ brew install trash
 brew install tree
 brew install stow
 brew install wget
+brew install links
 brew install imagemagick
 brew install yarn
 
