@@ -19,6 +19,7 @@ brew install stow
 brew install wget
 brew install links
 brew install imagemagick
+brew install pandoc
 brew install yarn
 
 brew install pyenv
@@ -26,6 +27,19 @@ brew install rbenv
 
 brew cask install mactex
 brew cask install cheatsheet
-brew cask install powershell
 brew cask install karabiner-elements
+brew cask install vlc
+brew cask install iterm2
+
+brew cask install powershell
+brew cask install visual-studio-code
+brew cask install microsoft-azure-storage-explorer
+brew cask install slack
+brew cask install microsoft-teams
+
+brew cask install gimp
+brew cask install inkscape
+brew cask install spotify
+brew cask install openemu
+
 
