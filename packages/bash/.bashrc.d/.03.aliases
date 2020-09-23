@@ -39,10 +39,6 @@ alias ssh-sha256="ssh-keygen -l -E sha256 -f"
 alias ssh-md5="ssh-keygen -l -E md5 -f"
 
 
-# alias python to python3, the system default python is 2, and changing the symlink might break things
-alias python='python3'
-alias pip='pip3'
-
 # alias emacs to use the symlink that points to the homebrew installation
 alias emacs="/usr/local/bin/emacs"
 

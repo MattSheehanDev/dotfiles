@@ -21,8 +21,11 @@ brew install links
 brew install imagemagick
 brew install yarn
 
+brew install pyenv
+brew install rbenv
 
 brew cask install mactex
 brew cask install cheatsheet
 brew cask install powershell
+brew cask install karabiner-elements
 
