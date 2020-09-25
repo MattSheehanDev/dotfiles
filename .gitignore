@@ -13,3 +13,5 @@
 .emacs.d/**
 
 packages/bash/.bashrc.secrets
+
+__azurite_db_queue**
