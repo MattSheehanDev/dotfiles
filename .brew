@@ -25,6 +25,9 @@ brew install yarn
 brew install pyenv
 brew install rbenv
 
+brew tap d12frosted/emacs-plus
+brew install emacs-plus@27 --with-natural-title-bars
+
 brew cask install mactex
 brew cask install cheatsheet
 brew cask install karabiner-elements

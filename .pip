@@ -1,0 +1,4 @@
+# install useful user python packages
+
+pip3 install --user gen-compose
+
