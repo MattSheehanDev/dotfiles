@@ -1,4 +1,4 @@
 # install useful global node packages
 
 yarn global add react-devtools
-
+yarn global add tldr
