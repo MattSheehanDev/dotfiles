@@ -7,9 +7,13 @@
     "editor.lineNumbers": "on",
     "editor.detectIndentation": false,
     "editor.minimap.enabled": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll,eslint": true
+
+    "[typescript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll,eslint": true
+        }
     },
+    
     "explorer.openEditors.visible": 0,
     "explorer.decorations.colors": false,
     "explorer.confirmDelete": false,
@@ -89,4 +93,5 @@
     "solargraph.hover": true,
     "diffEditor.renderSideBySide": true,
     "latex-workshop.view.pdf.viewer": "tab",
+    "vscode-edge-devtools.enableNetwork": true,
 }
