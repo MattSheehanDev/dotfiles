@@ -24,7 +24,7 @@ if [[ -f "${GITAWAREPROMPT}/main.sh" ]]; then
 fi
 
 # Enable bash_completion (macOS)
-# Ubuntu will source scripts from /etc/profile.d/ automatically
+# Ubuntu will install the package in /etc/profile.d/ and scripts from /etc/profile.d/ sourced automatically
 if [[ -r /usr/local/etc/profile.d/bash_completion.sh ]]; then
     source /usr/local/etc/profile.d/bash_completion.sh
 fi
