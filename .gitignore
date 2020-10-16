@@ -14,4 +14,8 @@
 
 packages/bash/.bashrc.secrets
 
+packages/.bashrc.d/bash-sensible/**
+packages/.bashrc.d/git-aware-prompt/**
+packages/.bashrc.d/z/**
+
 __azurite_db_queue**

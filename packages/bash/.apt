@@ -1,0 +1,6 @@
+# install apt packages
+
+sudo apt update
+
+sudo apt install bash-completion
+

@@ -1,5 +1,7 @@
 # install brew packages
 
+brew update
+
 brew install core-utils
 brew install more-utils
 brew install find-utils

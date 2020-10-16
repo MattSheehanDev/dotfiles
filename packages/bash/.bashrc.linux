@@ -2,6 +2,10 @@
 
 # Put linux specific configurations here
 
+
 # list directory contents
 alias ls='ls -alp --color'
+
+# If ubuntu
+alias sysversion="cat /etc/os-release"
 
