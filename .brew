@@ -23,6 +23,7 @@ brew install links
 brew install imagemagick
 brew install pandoc
 brew install yarn
+brew install vim
 
 brew install pyenv
 brew install rbenv
