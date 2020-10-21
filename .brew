@@ -12,7 +12,7 @@ brew install openssh
 brew install git
 brew install bash
 
-
+brew install ssh-copy-id
 brew install bash-completion@2
 brew install archey
 brew install trash
