@@ -2,9 +2,9 @@
 
 brew update
 
-brew install core-utils
-brew install more-utils
-brew install find-utils
+brew install coreutils
+brew install moreutils
+brew install findutils
 
 # install newer versions than what the system has
 brew install grep

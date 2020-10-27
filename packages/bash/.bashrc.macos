@@ -11,12 +11,21 @@ fi
 
 
 
-# list directory contents, specific to macOS
-alias ls='ls -alp --color'
+# list directory contents -- coreutils is a prereq
+if [ brew ls --versions coreutils > /dev/null ]; then
+  # core utils is installed
+  alias ls='ls -alp --color'
+else
+  # coreutils is not installed
+  alias ls='ls -alp'
+fi
 
 
 # Archy
-archey -o
+if [ brew ls --versions archey > /dev/null ]; then
+    archey -o
+fi
+
 
 
 ###############
