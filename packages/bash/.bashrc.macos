@@ -12,7 +12,7 @@ fi
 
 
 # list directory contents -- coreutils is a prereq
-if [ brew ls --versions coreutils > /dev/null ]; then
+if [[ brew ls --versions coreutils > /dev/null ]]; then
   # core utils is installed
   alias ls='ls -alp --color'
 else
@@ -22,7 +22,7 @@ fi
 
 
 # Archy
-if [ brew ls --versions archey > /dev/null ]; then
+if [[ brew ls --versions archey > /dev/null ]]; then
     archey -o
 fi
 
