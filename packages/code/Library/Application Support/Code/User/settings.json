@@ -40,6 +40,7 @@
     "extensions.autoUpdate": false,
 
     "terminal.integrated.cursorBlinking": false,
+    "terminal.integrated.inheritEnv": false,
 
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
@@ -94,4 +95,12 @@
     "diffEditor.renderSideBySide": true,
     "latex-workshop.view.pdf.viewer": "tab",
     "vscode-edge-devtools.enableNetwork": true,
+
+    // Python
+    "python.dataScience.askForKernelRestart": false,
+    "python.autoComplete.addBrackets": true,
+    "python.formatting.provider": "autopep8",
+    "[python]": {
+        "editor.formatOnSave": true
+    },
 }
