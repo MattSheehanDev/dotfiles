@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "ms-dotnettools.csharp",
+        "ms-python.python",
         "ms-azuretools.vscode-azurefunctions",
         "dbaeumer.vscode-eslint",
         "mikebovenlander.formate",
@@ -9,6 +10,7 @@
         "msjsdiag.debugger-for-edge",
         "ms-edgedevtools.vscode-edge-devtools",
         "jeff-tian.tex-workshop",
-        "be5invis.vscode-icontheme-nomo-dark"
+        "be5invis.vscode-icontheme-nomo-dark",
+        "ms-dotnettools.dotnet-interactive-vscode"
     ]
 }
