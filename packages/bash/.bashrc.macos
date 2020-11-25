@@ -22,7 +22,7 @@ fi
 
 
 # Archy
-if [[ $(brew ls --versions archey > /dev/null) ]]; then
+if [ -x $(command -v archey) ]; then
     archey -o
 fi
 
