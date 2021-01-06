@@ -97,9 +97,6 @@
     "ruby.intellisense": false,
     "solargraph.useBundler": true,
     "solargraph.hover": true,
-    "diffEditor.renderSideBySide": true,
-    "latex-workshop.view.pdf.viewer": "tab",
-    "vscode-edge-devtools.enableNetwork": true,
 
     // Python
     "python.dataScience.askForKernelRestart": false,
@@ -109,9 +106,27 @@
         "editor.formatOnSave": true
     },
 
+    // Jupyter
+    "jupyter.alwaysTrustNotebooks": true,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+
     // JSON (with comments)
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "gitlens.hovers.enabled": false
+    "gitlens.hovers.enabled": false,
+
+        // Git diff
+    "diffEditor.renderSideBySide": true,
+
+    // Latex
+    "latex-workshop.view.pdf.viewer": "tab",
+
+    // MS Edge
+    "vscode-edge-devtools.enableNetwork": true
 }
