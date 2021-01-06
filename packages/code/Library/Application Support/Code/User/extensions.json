@@ -13,6 +13,7 @@
         "be5invis.vscode-icontheme-nomo-dark",
         "ms-dotnettools.dotnet-interactive-vscode",
         "eamodio.gitlens",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "smikitky.vscode-dicom"
     ]
 }
