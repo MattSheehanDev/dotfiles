@@ -11,6 +11,8 @@
         "ms-edgedevtools.vscode-edge-devtools",
         "jeff-tian.tex-workshop",
         "be5invis.vscode-icontheme-nomo-dark",
-        "ms-dotnettools.dotnet-interactive-vscode"
+        "ms-dotnettools.dotnet-interactive-vscode",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode"
     ]
 }

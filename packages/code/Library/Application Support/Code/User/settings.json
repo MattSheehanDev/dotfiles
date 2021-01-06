@@ -45,6 +45,11 @@
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
 
+    // Markdown
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
     "css.lint.universalSelector": "error",
     "css.lint.important": "error",
     "css.lint.duplicateProperties": "error",
@@ -83,7 +88,7 @@
     "eslint.packageManager": "yarn",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "javascript.format.semicolons": "insert",
-    "javascript.implicitProjectConfig.checkJs": true,
+    "js/ts.implicitProjectConfig.checkJs": true,
 
     // HTML
     "html.format.indentInnerHtml": true,
@@ -103,4 +108,10 @@
     "[python]": {
         "editor.formatOnSave": true
     },
+
+    // JSON (with comments)
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "gitlens.hovers.enabled": false
 }
