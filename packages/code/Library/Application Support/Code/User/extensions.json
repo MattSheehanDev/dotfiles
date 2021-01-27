@@ -3,6 +3,7 @@
         "ms-dotnettools.csharp",
         "ms-python.python",
         "ms-azuretools.vscode-azurefunctions",
+        "ms-vscode.azure-account",
         "dbaeumer.vscode-eslint",
         "mikebovenlander.formate",
         "msjsdiag.debugger-for-chrome",
