@@ -11,7 +11,8 @@
     "[typescript]": {
         "editor.codeActionsOnSave": {
             "source.fixAll,eslint": true
-        }
+        },
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     
     "explorer.openEditors.visible": 0,
@@ -40,6 +41,7 @@
     "extensions.autoUpdate": false,
 
     "terminal.integrated.cursorBlinking": false,
+    // Disable for python, enable for ts
     "terminal.integrated.inheritEnv": false,
 
     "telemetry.enableTelemetry": false,
@@ -113,5 +115,8 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "gitlens.hovers.enabled": false
+    "gitlens.hovers.enabled": false,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
 }
