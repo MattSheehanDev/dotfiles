@@ -14,6 +14,8 @@ alias v="$VISUAL"
 alias csv="column -s, -t"
 alias cls="clear; ls"
 
+alias ll="ls -l"
+
 # git aliases
 alias gconfig="git config --global -e"
 alias ga="git-add"
