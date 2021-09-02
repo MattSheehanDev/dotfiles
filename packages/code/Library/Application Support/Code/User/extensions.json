@@ -15,6 +15,7 @@
         "ms-dotnettools.dotnet-interactive-vscode",
         "eamodio.gitlens",
         "esbenp.prettier-vscode",
-        "smikitky.vscode-dicom"
+        "smikitky.vscode-dicom",
+        "ms-azuretools.vscode-bicep"
     ]
 }
