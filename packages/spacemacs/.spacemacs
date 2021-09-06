@@ -354,16 +354,12 @@ you should place your code here."
 (defun open-ledger-station ()
   "The ledger station opens three windows (general ledger, account ledger, and balance report)"
   (interactive)
-  (open-fullscreen)
-  (find-file-existing "~/Projects/ledger-data/data/general.ledger")
+  (find-file "~/Projects/ledger-data/data/general.ledger")
   (end-of-buffer)
   (split-window-right)
   (next-multiframe-window)
-  (find-file-existing "~/Projects/ledger-data/data/accounts.ledger")
+  (find-file "~/Projects/ledger-data/data/accounts.ledger")
   (split-window-below)
-  (next-multiframe-window)
-  (next-multiframe-window)
-  (next-multiframe-window)
   (ledger-report "bal" nil)
   )
 
