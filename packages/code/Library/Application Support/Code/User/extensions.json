@@ -16,6 +16,7 @@
         "eamodio.gitlens",
         "esbenp.prettier-vscode",
         "smikitky.vscode-dicom",
-        "ms-azuretools.vscode-bicep"
+        "ms-azuretools.vscode-bicep",
+        "ms-vscode-remote.remote-wsl"
     ]
 }
