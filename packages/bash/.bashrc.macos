@@ -29,6 +29,8 @@ fi
 # powermetrics
 alias pm="powermetrics"
 
+# alias emacs to use the symlink that points to the homebrew installation
+alias emacs="/usr/local/bin/emacs"
 
 ###############
 # DNS

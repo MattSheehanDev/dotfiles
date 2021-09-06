@@ -9,3 +9,6 @@ alias ls='ls -alp --color'
 # If ubuntu
 alias sysversion="cat /etc/os-release"
 
+
+# For WSL2, to display gui applications
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0

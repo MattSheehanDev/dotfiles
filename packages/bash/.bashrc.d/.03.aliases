@@ -41,10 +41,6 @@ alias ssh-sha256="ssh-keygen -l -E sha256 -f"
 alias ssh-md5="ssh-keygen -l -E md5 -f"
 
 
-# alias emacs to use the symlink that points to the homebrew installation
-alias emacs="/usr/local/bin/emacs"
-
-
 alias ledreports="~/Projects/ledger-reports/reports.sh"
 alias ledpush="~/Dropbox/Finances/accounting/ledger/commit.sh"
 # alias ledarchive="${LEDGER_REPORTS_DIR}/archive.sh"
