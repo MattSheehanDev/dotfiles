@@ -12,7 +12,7 @@
         "editor.codeActionsOnSave": {
             "source.fixAll,eslint": true
         },
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "vscode.typescript-language-features",
     },
     
     "explorer.openEditors.visible": 0,
@@ -20,7 +20,6 @@
     "explorer.confirmDelete": false,
 
     "window.restoreWindows": "none",
-    "window.zoomLevel": 0,
     "window.nativeFullScreen": false,
     "window.titleBarStyle": "custom",
 
@@ -42,7 +41,7 @@
 
     "terminal.integrated.cursorBlinking": false,
     // Disable for python, enable for ts
-    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.inheritEnv": true,
 
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
@@ -110,12 +109,9 @@
 
     // Jupyter
     "jupyter.alwaysTrustNotebooks": true,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
 
     // JSON (with comments)
     "[jsonc]": {
@@ -133,5 +129,13 @@
     "latex-workshop.view.pdf.viewer": "tab",
 
     // MS Edge
-    "vscode-edge-devtools.enableNetwork": true
+    "vscode-edge-devtools.enableNetwork": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "python.analysis.completeFunctionParens": true,
+    "security.workspace.trust.untrustedFiles": "open"
 }
