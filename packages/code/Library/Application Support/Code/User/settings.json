@@ -43,8 +43,7 @@
     // Disable for python, enable for ts
     "terminal.integrated.inheritEnv": true,
 
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
+    "telemetry.telemetryLevel": "off",
 
     // Markdown
     "[markdown]": {
