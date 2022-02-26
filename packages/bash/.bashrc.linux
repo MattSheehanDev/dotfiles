@@ -9,3 +9,10 @@ alias ls='ls -alp --color'
 # If ubuntu
 alias sysversion="cat /etc/os-release"
 
+
+# alias emacs to use the symlink that points to the apt installation
+alias emacs="/usr/bin/emacs27"
+
+# For WSL2, to display gui applications
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+

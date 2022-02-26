@@ -1,0 +1,3 @@
+# install choco packages
+
+choco install vcxsrv
