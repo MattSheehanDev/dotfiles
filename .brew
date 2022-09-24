@@ -10,10 +10,14 @@ brew install findutils
 brew install grep
 brew install openssh
 brew install git
+
 brew install bash
+brew install bash-completion@2
+
+brew install zsh
+brew install pure
 
 brew install ssh-copy-id
-brew install bash-completion@2
 brew install trash
 brew install tree
 brew install stow
