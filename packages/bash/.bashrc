@@ -35,6 +35,9 @@ alias chzsh="chsh -s $(which zsh)"
 
 # OS specific settings
 if [[ "$OSTYPE" == "darwin"* ]]; then
+    if [[ $(uname -m) == 'arm64' ]]; then
+        source ~/.bashrc.macos.arm64
+    fi
     source ~/.bashrc.macos
 elif [[ "$OSTYPE" == "linux"* ]]; then
     source ~/.bashrc.linux

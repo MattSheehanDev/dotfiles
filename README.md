@@ -2,7 +2,7 @@
 
 My configuration
 
-* __OS:__ macOS >= 10.15.4
+* __OS:__ macOS >= 12.3
 * __Terminal:__ iTerm2
 * __Color Scheme:__ Base16 in the OneDark-256 variation
 * __Font:__ 12pt Monaco
@@ -25,6 +25,8 @@ brew install bash-completion
 ```
 
 ### .bashrc.d
+
+Clone the following repos into `~/.bashrc.d`.
 
 - External packages
     - [Z](https://github.com/rupa/z)

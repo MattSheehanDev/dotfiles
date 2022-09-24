@@ -21,11 +21,6 @@ else
 fi
 
 
-# Archy
-if [ -x $(command -v archey) ]; then
-    archey -o
-fi
-
 # powermetrics
 alias pm="powermetrics"
 

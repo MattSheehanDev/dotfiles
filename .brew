@@ -14,7 +14,6 @@ brew install bash
 
 brew install ssh-copy-id
 brew install bash-completion@2
-brew install archey
 brew install trash
 brew install tree
 brew install stow
@@ -26,6 +25,7 @@ brew install yarn
 brew install vim
 brew install mas
 brew install pwgen
+brew install ledger
 
 brew install pyenv
 brew install rbenv
@@ -33,21 +33,21 @@ brew install rbenv
 brew tap d12frosted/emacs-plus
 brew install emacs-plus@27 --with-natural-title-bars
 
-brew cask install mactex
-brew cask install cheatsheet
-brew cask install karabiner-elements
-brew cask install vlc
-brew cask install iterm2
+brew install mactex --cask
+brew install cheatsheet --cask
+brew install karabiner-elements --cask
+brew install vlc --cask
+brew install iterm2 --cask
 
-brew cask install powershell
-brew cask install visual-studio-code
-brew cask install microsoft-azure-storage-explorer
-brew cask install slack
-brew cask install microsoft-teams
+brew install powershell --cask
+brew install visual-studio-code --cask
+brew install microsoft-azure-storage-explorer --cask
+brew install slack --cask
+brew install microsoft-teams --cask
 
-brew cask install gimp
-brew cask install inkscape
-brew cask install spotify
-brew cask install openemu
+brew install gimp --cask
+brew install inkscape --cask
+brew install spotify --cask
+brew install openemu --cask
 
 
