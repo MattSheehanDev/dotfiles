@@ -84,6 +84,7 @@ plugins=(
     common-aliases
     vscode
     sudo
+    colorize
     )
 
 source $ZSH/oh-my-zsh.sh
@@ -115,7 +116,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Configure the Pure theme
+# More configuration options can be
+# found here, https://github.com/sindresorhus/pure#colors
 autoload -U promptinit; promptinit
+zstyle :prompt:pure:path color green
 zstyle :prompt:pure:git:branch color yellow
 zstyle :prompt:pure:git:stash show yes
 prompt pure
