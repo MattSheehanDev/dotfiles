@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="risto"
+ZSH_THEME=""
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -72,6 +72,7 @@ plugins=(
     macos
     brew
     git
+    gitignore
     z
     npm
     rbenv ruby bundler
@@ -80,6 +81,9 @@ plugins=(
     colorize
     dotenv
     aliases
+    common-aliases
+    vscode
+    sudo
     )
 
 source $ZSH/oh-my-zsh.sh
@@ -109,3 +113,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Configure the Pure theme
+autoload -U promptinit; promptinit
+zstyle :prompt:pure:git:branch color yellow
+zstyle :prompt:pure:git:stash show yes
+prompt pure
