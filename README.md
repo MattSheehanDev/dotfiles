@@ -2,7 +2,7 @@
 
 My configuration
 
-* __OS:__ macOS >= 12.3
+* __OS:__ macOS >= 12.6
 * __Terminal:__ iTerm2
 * __Color Scheme:__ Base16 in the OneDark-256 variation
 * __Font:__ 12pt Monaco

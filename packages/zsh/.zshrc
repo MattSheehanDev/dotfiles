@@ -123,3 +123,11 @@ zstyle :prompt:pure:path color green
 zstyle :prompt:pure:git:branch color yellow
 zstyle :prompt:pure:git:stash show yes
 prompt pure
+
+# Enable rbenv
+eval "$(rbenv init - zsh)"
+
+# Export env variable for ledger-reports project
+export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Documents/finances/account/reports"
+# Add alias to ledger-reports script
+alias ledreports="~/Projects/ledger-reports/reports.sh"
