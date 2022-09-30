@@ -131,3 +131,6 @@ eval "$(rbenv init - zsh)"
 export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Documents/finances/account/reports"
 # Add alias to ledger-reports script
 alias ledreports="~/Projects/ledger-reports/reports.sh"
+
+# Add to PATH
+PATH=$PATH:/usr/local/texlive/2022/bin/universal-darwin

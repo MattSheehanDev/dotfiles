@@ -109,7 +109,8 @@
     // Jupyter
     "jupyter.alwaysTrustNotebooks": true,
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter.notebook.ipynb",
+        "*.pdf": "latex-workshop-pdf-hook"
     },
 
     // JSON (with comments)
