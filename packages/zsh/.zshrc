@@ -128,7 +128,7 @@ prompt pure
 eval "$(rbenv init - zsh)"
 
 # Export env variable for ledger-reports project
-export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Documents/finances/account/reports"
+export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Documents/finances/accounting/ledger-reports"
 # Add alias to ledger-reports script
 alias ledreports="~/Projects/ledger-reports/reports.sh"
 
