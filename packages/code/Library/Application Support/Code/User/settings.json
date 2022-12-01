@@ -97,13 +97,8 @@
     "ruby.intellisense": false,
     "solargraph.useBundler": true,
     "solargraph.hover": true,
-
-    // Python
-    "python.dataScience.askForKernelRestart": false,
-    "python.autoComplete.addBrackets": true,
-    "python.formatting.provider": "autopep8",
     "[python]": {
-        "editor.formatOnSave": true
+        "editor.formatOnSave": false
     },
 
     // Jupyter
@@ -119,7 +114,8 @@
     },
     "gitlens.hovers.enabled": false,
     "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.tabSize": 2
     },
 
     // Git diff
@@ -137,5 +133,7 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "python.analysis.completeFunctionParens": true,
-    "security.workspace.trust.untrustedFiles": "open"
+    "security.workspace.trust.untrustedFiles": "open",
+    "jupyter.askForKernelRestart": false,
+    "diffEditor.ignoreTrimWhitespace": false,
 }

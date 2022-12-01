@@ -32,6 +32,7 @@ brew install pwgen
 brew install ledger
 
 brew install pyenv
+brew install pyenv-virtualenv
 brew install rbenv
 
 brew tap d12frosted/emacs-plus

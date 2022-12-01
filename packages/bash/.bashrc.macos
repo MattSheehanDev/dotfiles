@@ -48,11 +48,13 @@ dns() {
 # alias contract++="/Users/matthewsheehan/Projects/clang-llvm-contracts/llvm-build/bin/clang++"
 
 
- 
+ # Alias to fix pyenv warning
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+
  ###############
  # Conda initialize
  ###############
-if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-    . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-fi
+# if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+#     . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+# fi
 
