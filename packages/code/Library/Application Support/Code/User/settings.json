@@ -14,6 +14,7 @@
         },
         "editor.defaultFormatter": "vscode.typescript-language-features",
     },
+    "typescript.npm": "/opt/homebrew/bin/npm",
     
     "explorer.openEditors.visible": 0,
     "explorer.decorations.colors": false,
@@ -87,7 +88,7 @@
 
     "eslint.packageManager": "yarn",
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "javascript.format.semicolons": "insert",
+    // "javascript.format.semicolons": "insert",
     "js/ts.implicitProjectConfig.checkJs": true,
 
     // HTML
@@ -127,7 +128,8 @@
     // MS Edge
     "vscode-edge-devtools.enableNetwork": true,
     "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "format.semicolons": "insert"
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -136,4 +138,9 @@
     "security.workspace.trust.untrustedFiles": "open",
     "jupyter.askForKernelRestart": false,
     "diffEditor.ignoreTrimWhitespace": false,
+    "prettier.tabWidth": 4,
+    "prettier.jsonEnable": [
+        "json"
+    ],
+    "workbench.colorTheme": "Visual Studio Light"
 }
