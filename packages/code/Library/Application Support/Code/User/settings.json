@@ -115,8 +115,13 @@
     },
     "gitlens.hovers.enabled": false,
     "[json]": {
+<<<<<<< Updated upstream
         "editor.defaultFormatter": "vscode.json-language-features",
         "editor.tabSize": 2
+=======
+        "editor.defaultFormatter": "vscode.json-language-features"
+        // "editor.defaultFormatter": "bysabi.prettier-vscode-standard",
+>>>>>>> Stashed changes
     },
 
     // Git diff
@@ -136,8 +141,11 @@
     },
     "python.analysis.completeFunctionParens": true,
     "security.workspace.trust.untrustedFiles": "open",
+<<<<<<< Updated upstream
     "jupyter.askForKernelRestart": false,
     "diffEditor.ignoreTrimWhitespace": false,
+=======
+>>>>>>> Stashed changes
     "prettier.tabWidth": 4,
     "prettier.jsonEnable": [
         "json"
