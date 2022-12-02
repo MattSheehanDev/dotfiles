@@ -6,6 +6,17 @@ case $- in
 esac
 
 
+# OS specific settings
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    if [[ $(uname -m) == 'arm64' ]]; then
+        source ~/.zshrc.macos.arm64
+    fi
+    source ~/.zshrc.macos
+elif [[ "$OSTYPE" == "linux"* ]]; then
+    source ~/.zshrc.linux
+fi
+
+
 # This churns through files in $HOME/.bashrc.d if they are executable.
 setopt dotglob
 if [ -d "$HOME/.zshrc.d" ]; then
@@ -30,18 +41,6 @@ shell-add() {
 
 # change shell to zsh
 alias chzsh="chsh -s $(which zsh)"
-
-
-
-# OS specific settings
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    if [[ $(uname -m) == 'arm64' ]]; then
-        source ~/.zshrc.macos.arm64
-    fi
-    source ~/.zshrc.macos
-elif [[ "$OSTYPE" == "linux"* ]]; then
-    source ~/.zshrc.linux
-fi
 
 
 # Secrets
