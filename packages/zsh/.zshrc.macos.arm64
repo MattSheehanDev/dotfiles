@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Homebrew uses a different default directory for Apple Silicon
 eval "$(/opt/homebrew/bin/brew shellenv)"

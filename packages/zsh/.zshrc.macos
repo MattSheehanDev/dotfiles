@@ -1,26 +1,5 @@
 #!/bin/zsh
 
-# ###############
-# # BASH-COMPLETION
-# ###############
-# # Enable Bash completion
-# if [ -f "$(brew --prefix)"/etc/bash_completion ]; then
-#     . "$(brew --prefix)"/etc/bash_completion
-# fi
-
-
-
-
-# # list directory contents -- coreutils is a prereq
-# if [[ $(brew ls --versions coreutils > /dev/null) ]]; then
-#   # core utils is installed
-#   alias ls='ls -alp --color'
-# else
-#   # coreutils is not installed
-#   alias ls='ls -alp'
-# fi
-
-
 # powermetrics
 alias pm="powermetrics"
 
