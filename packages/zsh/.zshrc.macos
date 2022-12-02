@@ -1,0 +1,60 @@
+#!/bin/zsh
+
+# ###############
+# # BASH-COMPLETION
+# ###############
+# # Enable Bash completion
+# if [ -f "$(brew --prefix)"/etc/bash_completion ]; then
+#     . "$(brew --prefix)"/etc/bash_completion
+# fi
+
+
+
+
+# # list directory contents -- coreutils is a prereq
+# if [[ $(brew ls --versions coreutils > /dev/null) ]]; then
+#   # core utils is installed
+#   alias ls='ls -alp --color'
+# else
+#   # coreutils is not installed
+#   alias ls='ls -alp'
+# fi
+
+
+# powermetrics
+alias pm="powermetrics"
+
+# alias emacs to use the symlink that points to the homebrew installation
+alias emacs="/usr/local/bin/emacs"
+
+###############
+# DNS
+###############
+flushdns() {
+    sudo killall -HUP mDNSResponder;
+    sudo killall mDNSResponderHelper;
+    sudo dscacheutil -flushcache;
+    echo "DNS flushed"
+}
+dns() {
+    # domain information groper
+    dig "$1" +noall +answer
+}
+
+###############
+# CLANG
+###############
+# export PATH="~/Projects/clang-llvm-trunk/build/bin:$PATH"
+# alias contract++="/Users/matthewsheehan/Projects/clang-llvm-contracts/llvm-build/bin/clang++"
+
+
+ # Alias to fix pyenv warning
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+
+ ###############
+ # Conda initialize
+ ###############
+# if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+#     . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+# fi
+

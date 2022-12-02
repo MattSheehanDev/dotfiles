@@ -124,13 +124,23 @@ zstyle :prompt:pure:git:branch color yellow
 zstyle :prompt:pure:git:stash show yes
 prompt pure
 
-# Enable rbenv
-eval "$(rbenv init - zsh)"
 
-# Export env variable for ledger-reports project
-export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Documents/finances/accounting/ledger-reports"
-# Add alias to ledger-reports script
-alias ledreports="~/Projects/ledger-reports/reports.sh"
 
-# Add to PATH
-PATH=$PATH:/usr/local/texlive/2022/bin/universal-darwin
+
+
+# # Enable rbenv
+# eval "$(rbenv init - zsh)"
+
+# # Export env variable for ledger-reports project
+# export LEDGER_REPORTS_OUTPUT_DIR="$HOME/Documents/finances/accounting/ledger-reports"
+# # Add alias to ledger-reports script
+# alias ledreports="~/Projects/ledger-reports/reports.sh"
+
+# # Add to PATH
+# PATH=$PATH:/usr/local/texlive/2022/bin/universal-darwin
+
+
+
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init --path)"

@@ -1,0 +1,172 @@
+#!/bin/zsh
+
+###############
+# Git
+###############
+git-add() {
+    # I like to see the staged files after an add
+    git add "$@"
+    git status
+}
+git-push() {
+    # I am also like to see what files are staged/unstaged after a push
+    git push "$@"
+    git status
+}
+
+###############
+# OpenSSL
+###############
+x509cert() {
+    # create new x509cert and key (-nodes makes it unencrypted)
+    openssl req -new -x509 -newkey rsa:2048 -keyout "$1.key" -out "$1.cer" -days 365 -subj /CN=localhost -nodes
+    # create pfx (macOS assumes it always has a password, so it always needs a password) s
+    openssl pkcs12 -export -out "$1.pfx" -inkey "$1.key" -in "$1.cer"
+    # print thumbprint
+    echo -en "\n"
+    thumbprint "$1.cer"
+}
+thumbprint() {
+    openssl x509 -in "$1" -outform DER | sha1sum
+}
+inspect-ssl() {
+    echo | openssl s_client -showcerts -servername $1 -connect $1:443 2>/dev/null | openssl x509 -inform pem -noout -text
+}
+
+###############
+# Colorized man pages
+###############
+man() {
+    # \escape[line width;line color;line underline]
+    env \
+        LESS_TERMCAP_mb=$'\e[1;31m' \
+        LESS_TERMCAP_md=$'\e[1;36m' \
+        LESS_TERMCAP_me=$'\e[0m' \
+        LESS_TERMCAP_se=$'\e[0m' \
+        LESS_TERMCAP_so=$'\e[1;40;92m' \
+        LESS_TERMCAP_ue=$'\e[0m' \
+        LESS_TERMCAP_us=$'\e[0;32;4m' \
+            man "$@"
+}
+
+###############
+# Cheat.sh
+###############
+cheat () {
+    curl cht.sh/"$1"
+}
+
+###############
+# Wttr.in
+###############
+weather() {
+    curl wttr.in/"$1"
+}
+
+###############
+# Lorem Picsum
+###############
+picsum() {
+    if [ $# -eq 0 ]; then
+        curl -L "https://picsum.photos/400/600"
+    else
+        curl -L "https://picsum.photos/$1/$2"
+    fi
+}
+
+
+SVGToPDF() {
+    inkscape --export-area-drawing --export-filename="${1/svg/pdf}" "$1"
+}
+PDFToPNG() {
+    magick convert -density 300 "$1" -quality 90 -alpha remove "${1/pdf/png}"
+}
+PNGToPFM() {
+    magick -endian lsb "$1" "${1/png/pfm}"
+}
+
+
+lowercase()  # move filenames to lowercase
+{
+    for file ; do
+        filename=${file##*/}
+        case "$filename" in
+        */*) dirname==${file%/*} ;;
+        *) dirname=.;;
+        esac
+        nf=$(echo $filename | tr A-Z a-z)
+        newname="${dirname}/${nf}"
+        if [ "$nf" != "$filename" ]; then
+            mv "$file" "$newname"
+            echo "lowercase: $file --> $newname"
+        else
+            echo "lowercase: $file not changed."
+        fi
+    done
+}
+
+extract()
+{
+    # I stole that one from the archwiki page. Quite handy!
+    if [ -f $1 ] ; then
+        case $1 in
+            *.tar.bz2)   tar xvjf $1     ;;
+            *.tar.gz)    tar xvzf $1     ;;
+            *.tar.xz)    tar xvJf $1     ;;
+            *.bz2)       bunzip2 $1      ;;
+            *.rar)       unrar x $1      ;;
+            *.gz)        gunzip $1       ;;
+            *.tar)       tar xvf $1      ;;
+            *.tbz2)      tar xvjf $1     ;;
+            *.tgz)       tar xvzf $1     ;;
+            *.zip)       unzip $1        ;;
+            *.Z)         uncompress $1   ;;
+            *.7z)        7z x $1         ;;
+            *)           echo "'$1' cannot be extracted via >extract<" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
+}
+
+
+  
+#
+# URL encoding and decoding functions
+# Borrowed from https://github.com/Daenyth/dotfiles/blob/master/.bashrc
+#
+
+urlencode() {
+    local LANG=C
+    arg="$1"
+    i="0"
+    while [ "$i" -lt ${#arg} ]; do
+        c=${arg:$i:1}
+        if echo "$c" | grep -q '[a-zA-Z/:_\.\-]'; then
+            echo -n "$c"
+        else
+            echo -n "%"
+            printf "%X" "'$c'"
+        fi
+        i=$((i+1))
+    done
+}
+
+urldecode() {
+    local LANG=C
+    arg="$1"
+    i="0"
+    while [ "$i" -lt ${#arg} ]; do
+        c0=${arg:$i:1}
+        if [ "x$c0" = "x%" ]; then
+            c1=${arg:$((i+1)):1}
+            c2=${arg:$((i+2)):1}
+            printf "\x$c1$c2"
+            i=$((i+3))
+        else
+            echo -n "$c0"
+            i=$((i+1))
+        fi
+    done
+}
+

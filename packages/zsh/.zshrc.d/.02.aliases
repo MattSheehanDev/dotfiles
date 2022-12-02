@@ -1,0 +1,51 @@
+#!/bin/zsh
+
+# shortcut for reloaded bash_profile
+alias refresh="source ~/.bash_profile"
+# shortcut for jumping back to the previous cwd
+alias -- -="cd -"
+
+# alias mkdir='mkdir -p'
+alias tree="tree -a -I \".git\""
+alias e="$EDITOR"
+alias v="$VISUAL"
+
+# shortcut for displaying csv's
+alias csv="column -s, -t"
+alias cls="clear; ls"
+
+# useful utilities
+alias b64="base64"
+alias sha256="shasum -a256"
+
+# base64 encoded SHA-256 fingerprint
+alias ssh-sha256="ssh-keygen -l -E sha256 -f"
+# hexadecimal md5 fingerprint
+alias ssh-md5="ssh-keygen -l -E md5 -f"
+
+
+alias ledreports="~/Projects/ledger-reports/reports.sh"
+alias ledpush="~/Dropbox/Finances/accounting/ledger/commit.sh"
+# alias ledarchive="${LEDGER_REPORTS_DIR}/archive.sh"
+alias ledstation="emacs -f open-ledger-station"
+
+
+# browser shortcuts, useful for debugging
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias ch='chrome --user-data-dir $(mktemp -d)'
+
+alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"
+alias fx='firefox --new-instance --profile $(mktemp -d)'
+alias fxp="fx -private"
+
+# # alias powershell
+# alias pwsh="/usr/local/microsoft/powershell/7/pwsh"
+alias data="azuredatastudio"
+#alias rbenv
+alias rb="rbenv"
+
+# alias trash
+alias del="trash"
+
+#alias shellcheck
+alias check="shellcheck"
