@@ -48,11 +48,14 @@ brew install powershell --cask
 brew install visual-studio-code --cask
 brew install microsoft-azure-storage-explorer --cask
 brew install slack --cask
+
 brew install microsoft-teams --cask
+brew install microsoft-outlook --cask
 
 brew install gimp --cask
 brew install inkscape --cask
 brew install spotify --cask
 brew install openemu --cask
-
+brew install google-chrome --cask
+brew install whatsapp --cask
 

@@ -11,17 +11,25 @@ My configuration
 ## Stow
 
 ```sh
-> cd packages
-> stow *
+brew install stow
+cd packages
+stow *
+```
+
+## Zsh
+
+Install
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ## Bash
 
 ### Packages
 
-Install `bash-completion`
+Install `bash-completion@2`
 ```sh
-brew install bash-completion
+brew install bash-completion@2
 ```
 
 ### .bashrc.d
