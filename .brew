@@ -36,7 +36,7 @@ brew install pyenv-virtualenv
 brew install rbenv
 
 brew tap d12frosted/emacs-plus
-brew install emacs-plus@27 --with-natural-title-bars
+brew install emacs-plus@29 --with-spacemacs-icon
 
 brew install mactex --cask
 brew install cheatsheet --cask
@@ -58,4 +58,4 @@ brew install spotify --cask
 brew install openemu --cask
 brew install google-chrome --cask
 brew install whatsapp --cask
-
+brew install grandperspective --cask

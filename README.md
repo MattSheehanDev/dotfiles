@@ -13,7 +13,7 @@ My configuration
 ```sh
 brew install stow
 cd packages
-stow *
+stow */ -t ~
 ```
 
 ## Zsh
